@@ -7,5 +7,6 @@
     <color name="background">#FFFFFF</color>
     <color name="lineColorLight">#E3E3E3</color>
     <color name="fontColor">#766A6A</color>
+    <color name="shadow">#766A6A</color>
 
 </resources>
