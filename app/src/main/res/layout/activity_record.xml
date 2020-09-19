@@ -76,7 +76,7 @@
             app:layout_constraintBottom_toTopOf="@+id/subject_name"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="30dp"
-            android:text="00h 00m"
+            android:text="00 : 00"
             android:gravity="center"
             android:textColor="@color/fontColor"
             android:textSize="48sp"
@@ -113,7 +113,9 @@
         android:id="@+id/subject_editText_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="175dp"
         android:background="@drawable/border_round_box_right"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,16 +132,18 @@
             android:textColorHint="@color/fontColor"
             android:textSize="16sp" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/studyPlace_editText_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
+        android:layout_marginBottom="175dp"
         android:background="@drawable/border_round_box_right"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subject_editText_view"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
         android:padding="10dp"
         >
         <EditText
@@ -161,15 +165,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/studyPlace_editText_view"
         android:padding="20dp"
         android:paddingStart="30dp"
         android:paddingEnd="30dp"
+        android:layout_marginBottom="100dp"
         android:text="공부시간 측정하기"
         android:textColor="@color/background"
         android:textSize="24sp"
         android:shadowColor="@color/fontColor"
         />
+    <!--        app:layout_constraintTop_toBottomOf="@+id/studyPlace_editText_view"-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
