@@ -67,6 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         >
         <TextView
+            android:id="@+id/time_record_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -105,73 +106,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-        </GridLayout>
-        <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:columnCount="7"
-            android:rowCount="1">
-            <TextView
-                android:text="00"
-                android:textColor="@color/fontColor"
-                android:textSize="24sp"
-                android:layout_marginRight="5dp"/>
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -187,73 +147,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-        </GridLayout>
-        <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:columnCount="7"
-            android:rowCount="1">
-            <TextView
-                android:text="00"
-                android:textColor="@color/fontColor"
-                android:textSize="24sp"
-                android:layout_marginRight="5dp"/>
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -269,32 +188,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -310,32 +229,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -351,32 +270,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -392,32 +311,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -433,32 +352,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -474,32 +393,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -515,32 +434,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -556,32 +475,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -597,35 +516,80 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="7"
+            android:rowCount="1">
+            <TextView
+                android:text="00"
+                android:textColor="@color/fontColor"
+                android:textSize="24sp"
+                android:layout_marginRight="5dp"/>
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+        </GridLayout>
+
+
+
+
     </LinearLayout>
 
     <LinearLayout
@@ -652,73 +616,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-        </GridLayout>
-        <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:columnCount="7"
-            android:rowCount="1">
-            <TextView
-                android:text="00"
-                android:textColor="@color/fontColor"
-                android:textSize="24sp"
-                android:layout_marginRight="5dp"/>
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -734,73 +657,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-        </GridLayout>
-        <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:columnCount="7"
-            android:rowCount="1">
-            <TextView
-                android:text="00"
-                android:textColor="@color/fontColor"
-                android:textSize="24sp"
-                android:layout_marginRight="5dp"/>
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -816,73 +698,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-        </GridLayout>
-        <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:columnCount="7"
-            android:rowCount="1">
-            <TextView
-                android:text="00"
-                android:textColor="@color/fontColor"
-                android:textSize="24sp"
-                android:layout_marginRight="5dp"/>
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -898,73 +739,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-        </GridLayout>
-        <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:columnCount="7"
-            android:rowCount="1">
-            <TextView
-                android:text="00"
-                android:textColor="@color/fontColor"
-                android:textSize="24sp"
-                android:layout_marginRight="5dp"/>
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -980,73 +780,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-        </GridLayout>
-        <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:columnCount="7"
-            android:rowCount="1">
-            <TextView
-                android:text="00"
-                android:textColor="@color/fontColor"
-                android:textSize="24sp"
-                android:layout_marginRight="5dp"/>
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -1062,73 +821,32 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-        </GridLayout>
-        <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:columnCount="7"
-            android:rowCount="1">
-            <TextView
-                android:text="00"
-                android:textColor="@color/fontColor"
-                android:textSize="24sp"
-                android:layout_marginRight="5dp"/>
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:background="@drawable/time_table"
-                />
-            <View
-                android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
@@ -1144,32 +862,237 @@
                 android:layout_marginRight="5dp"/>
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
             <View
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+        </GridLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="7"
+            android:rowCount="1">
+            <TextView
+                android:text="00"
+                android:textColor="@color/fontColor"
+                android:textSize="24sp"
+                android:layout_marginRight="5dp"/>
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+        </GridLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="7"
+            android:rowCount="1">
+            <TextView
+                android:text="00"
+                android:textColor="@color/fontColor"
+                android:textSize="24sp"
+                android:layout_marginRight="5dp"/>
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+        </GridLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="7"
+            android:rowCount="1">
+            <TextView
+                android:text="00"
+                android:textColor="@color/fontColor"
+                android:textSize="24sp"
+                android:layout_marginRight="5dp"/>
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+        </GridLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="7"
+            android:rowCount="1">
+            <TextView
+                android:text="00"
+                android:textColor="@color/fontColor"
+                android:textSize="24sp"
+                android:layout_marginRight="5dp"/>
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+        </GridLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="7"
+            android:rowCount="1">
+            <TextView
+                android:text="00"
+                android:textColor="@color/fontColor"
+                android:textSize="24sp"
+                android:layout_marginRight="5dp"/>
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/time_table"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="35dp"
                 android:background="@drawable/time_table"
                 />
         </GridLayout>
