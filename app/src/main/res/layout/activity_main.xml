@@ -1100,6 +1100,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/goToRecord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/positive_button"
