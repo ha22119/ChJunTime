@@ -8,5 +8,6 @@
     <color name="lineColorLight">#E3E3E3</color>
     <color name="fontColor">#766A6A</color>
     <color name="shadow">#766A6A</color>
+    <color name="signUpBackground">#e1e1e1</color>
 
 </resources>
