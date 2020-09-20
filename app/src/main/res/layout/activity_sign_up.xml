@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUpActivity"
-    android:background="@color/signUpBackground">
+    android:background="@color/background">
 
     <ImageView
         android:id="@+id/image_light"
@@ -105,7 +105,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         android:padding="10dp"
@@ -119,16 +118,65 @@
         android:textSize="18sp"
         />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="10dp"
+        android:text="profile"
+        android:textColor="@color/fontColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/name_edit"
+        />
+
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        android:background="@drawable/under_button_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass_edit_signUp_check"
+        android:hint="이름 입력하세요"
+        android:textColorHint="@color/fontColor"
+        android:textColor="@color/fontColor"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:id="@+id/number_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:padding="10dp"
+        android:background="@drawable/under_button_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_edit"
+        android:hint="학번을 확인하세요"
+        android:textColorHint="@color/fontColor"
+        android:textColor="@color/fontColor"
+        android:textSize="18sp"
+        />
+
     <Button
         android:id="@+id/signUp_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_edit"
         android:text="SIGN UP"
         android:textSize="24sp"
         android:textColor="@color/background"
