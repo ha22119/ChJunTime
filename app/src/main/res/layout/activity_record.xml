@@ -148,12 +148,30 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@+id/todayButton"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/myButton"
+            app:layout_constraintEnd_toStartOf="@+id/recordButton"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/under_button_box"
             style="?android:attr/borderlessButtonStyle"
             android:text="MONTHLY"
+            android:textColor="@color/fontColor"
+            android:gravity="center"
+
+            />
+
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/monthlyButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/myButton"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/under_button_box"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="RECORD"
             android:textColor="@color/fontColor"
             android:gravity="center"
 
