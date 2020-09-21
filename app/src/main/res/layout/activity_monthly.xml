@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".MonthlyActivity"
     android:background="@color/backgroundDark">
-
+    <!--상단바-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
@@ -17,6 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -26,7 +27,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/date"
+        android:id="@+id/dateView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
@@ -35,136 +36,65 @@
         app:layout_constraintTop_toBottomOf="@+id/top_bar"
         app:layout_constraintEnd_toEndOf="parent"
         >
+        <ImageButton
+            android:id="@+id/backMonthButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/monthly_back_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#00FF0000"
+            />
 
         <TextView
+            android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="2020.00.00"
+            android:text="2020.00"
             android:gravity="center"
             android:textColor="@color/fontColor"
             android:textSize="24sp"
             />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/study_timer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/border_box"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date"
-        app:layout_constraintEnd_toEndOf="parent"
-        >
-        <TextView
-            android:id="@+id/time_record_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <ImageButton
+            android:id="@+id/nextMonthButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/monthly_next_button"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/subject_name"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="30dp"
-            android:text="00 : 00"
-            android:gravity="center"
-            android:textColor="@color/fontColor"
-            android:textSize="48sp"
-            />
-        <TextView
-            android:id="@+id/subject_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/time_record_text"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/study_place"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:text="과목 이름"
-            android:textColor="@color/fontColor"
-            />
-        <TextView
-            android:id="@+id/study_place"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/subject_name"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="40dp"
-            android:gravity="center"
-            android:text="공부 장소"
-            android:textColor="@color/fontColor"
+            android:background="#00FF0000"
             />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- 중간 달력 -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/study_timer"
+        app:layout_constraintTop_toBottomOf="@+id/dateView"
         app:layout_constraintBottom_toTopOf="@id/under_bar">
 
-        <ImageView
-            android:id="@+id/light_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/off_light"
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="7"
+            android:rowCount="5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/buttons"
             app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintBottom_toBottomOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/buttons"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+        </GridLayout>
 
-            <Button
-                android:id="@+id/restartButton"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/very_round_positive_button"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/resetButton"
-                android:padding="20dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginBottom="100dp"
-                android:text="restart"
-                android:textColor="@color/background"
-                android:textSize="24sp"
-                android:shadowColor="@color/fontColor"
-                />
-
-            <Button
-                android:id="@+id/resetButton"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/reset_button"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/restartButton"
-                android:padding="20dp"
-                android:layout_marginEnd="100dp"
-                android:layout_marginBottom="100dp"
-                android:text="reset"
-                android:textColor="@color/colorAccent"
-                android:textSize="24sp"
-                android:shadowColor="@color/fontColor"
-                />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!--하단바-->
@@ -177,8 +107,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         >
-
-
         <Button
             android:id="@+id/todayButton"
             android:layout_width="80dp"
@@ -195,6 +123,7 @@
             android:text="TODAY"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="todayClick"
             />
         <Button
             android:id="@+id/monthlyButton"
@@ -211,6 +140,7 @@
             android:text="MONTHLY"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="monthlyClick"
             />
 
         <Button
@@ -228,6 +158,7 @@
             android:text="RECORD"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="recordClick"
             />
         <Button
             android:id="@+id/groupButton"
@@ -244,6 +175,7 @@
             android:text="GROUP"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="groupClick"
             />
         <Button
             android:id="@+id/myButton"
@@ -261,9 +193,9 @@
             android:text="MY"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="myClick"
             />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

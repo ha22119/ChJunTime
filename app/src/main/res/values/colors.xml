@@ -9,5 +9,6 @@
     <color name="fontColor">#766A6A</color>
     <color name="shadow">#766A6A</color>
     <color name="signUpBackground">#e1e1e1</color>
+    <color name="highLight">#80A3DF66</color>
 
 </resources>
