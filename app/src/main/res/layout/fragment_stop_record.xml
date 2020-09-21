@@ -35,7 +35,7 @@
             android:id="@+id/restartButton"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/positive_button"
+            android:background="@drawable/very_round_positive_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:padding="20dp"
