@@ -7,6 +7,7 @@
     tools:context=".MainActivity"
     android:background="@color/backgroundDark">
 
+    <!--상단바-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
@@ -15,15 +16,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/date"
@@ -42,14 +34,14 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="2020.00.00"
+            android:text="그룹명"
             android:gravity="center"
             android:textColor="@color/fontColor"
             android:textSize="24sp"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/study_timer"
+        android:id="@+id/panel_dfjskjfls"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/border_box"
@@ -58,16 +50,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         >
         <TextView
-            android:id="@+id/time_record_text"
+            android:id="@+id/groupOwner_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/subject_name"
+            app:layout_constraintBottom_toTopOf="@+id/date"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="30dp"
-            android:text="00 : 00"
+            android:text="그룹장"
             android:gravity="center"
             android:textColor="@color/fontColor"
             android:textSize="48sp"
@@ -85,98 +77,74 @@
             android:text="과목 이름"
             android:textColor="@color/fontColor"
             />
-        <TextView
-            android:id="@+id/study_place"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/subject_name"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="40dp"
-            android:gravity="center"
-            android:text="공부 장소"
-            android:textColor="@color/fontColor"
-            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!--가입한 그룹 리스트-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/study_timer"
-        app:layout_constraintBottom_toTopOf="@id/under_bar">
+        app:layout_constraintTop_toBottomOf="@+id/myInfo"
+        app:layout_constraintBottom_toTopOf="@+id/under_bar"
+        >
 
-        <LinearLayout
-            android:id="@+id/subject_editText_view"
+        <TextView
+            android:id="@+id/joined_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/border_round_box_right"
-            android:padding="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/studyPlace_editText_view"
-            >
-
-            <EditText
-                android:id="@+id/subject_editText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="공부할 과목을 입력하세요"
-                android:textColor="@color/fontColor"
-                android:textColorHint="@color/fontColor"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/studyPlace_editText_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/border_round_box_right"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/subject_editText_view"
-            app:layout_constraintBottom_toTopOf="@+id/startButton"
-            android:padding="10dp"
-            >
-
-            <EditText
-                android:id="@+id/studyPlace_editText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="공부 장소를 입력하세요"
-                android:textColor="@color/fontColor"
-                android:textSize="16sp"
-                android:textColorHint="@color/fontColor"
-                />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/startButton"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/very_round_positive_button"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:padding="20dp"
-            android:paddingStart="30dp"
-            android:paddingEnd="30dp"
-            android:layout_marginBottom="100dp"
-            android:text="start"
-            android:textColor="@color/background"
-            android:textSize="24sp"
-            android:shadowColor="@color/fontColor"
+            android:text="가입 그룹"
+            android:textSize="18sp"
+            android:textColor="@color/fontColor"
             />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/joined_group"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_border_box">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/fontColor"
+                        android:textSize="24sp"
+                        android:text="스터디그룹 이름"
+                        android:padding="5dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!--하단바-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/under_bar"
         android:layout_width="match_parent"
@@ -274,6 +242,4 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

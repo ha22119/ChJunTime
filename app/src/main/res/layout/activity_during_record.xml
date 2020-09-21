@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,7 +16,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,6 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/top_bar"
         app:layout_constraintEnd_toEndOf="parent"
         >
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +48,9 @@
             android:textColor="@color/fontColor"
             android:textSize="24sp"
             />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/study_timer"
         android:layout_width="match_parent"
@@ -108,74 +111,35 @@
         app:layout_constraintTop_toBottomOf="@+id/study_timer"
         app:layout_constraintBottom_toTopOf="@id/under_bar">
 
-        <LinearLayout
-            android:id="@+id/subject_editText_view"
-            android:layout_width="match_parent"
+        <ImageView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/border_round_box_right"
-            android:padding="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/on_light"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/stopButton"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/studyPlace_editText_view"
-            >
+            />
 
-            <EditText
-                android:id="@+id/subject_editText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="공부할 과목을 입력하세요"
-                android:textColor="@color/fontColor"
-                android:textColorHint="@color/fontColor"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/studyPlace_editText_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/border_round_box_right"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/subject_editText_view"
-            app:layout_constraintBottom_toTopOf="@+id/startButton"
-            android:padding="10dp"
-            >
-
-            <EditText
-                android:id="@+id/studyPlace_editText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="공부 장소를 입력하세요"
-                android:textColor="@color/fontColor"
-                android:textSize="16sp"
-                android:textColorHint="@color/fontColor"
-                />
-        </LinearLayout>
 
         <Button
-            android:id="@+id/startButton"
+            android:id="@+id/stopButton"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/very_round_positive_button"
+            android:background="@drawable/stop_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:padding="20dp"
-            android:paddingStart="30dp"
-            android:paddingEnd="30dp"
             android:layout_marginBottom="100dp"
-            android:text="start"
-            android:textColor="@color/background"
-            android:textSize="24sp"
+            android:text="STOP"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
             android:shadowColor="@color/fontColor"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/under_bar"
@@ -274,6 +238,5 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
