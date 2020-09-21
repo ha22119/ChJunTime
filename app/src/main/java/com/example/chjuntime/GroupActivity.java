@@ -40,9 +40,10 @@ public class GroupActivity extends AppCompatActivity {
     }
 
     public void monthlyClick(View view) {
-        //Intent monthlyIntent = new Intent(getApplicationContext(),MainActivity.class);
-        //startActivity(monthlyIntent);
-        Toast.makeText(this, "아직 없는 액티비티", Toast.LENGTH_SHORT).show();
+        Intent monthlyIntent = new Intent(getApplicationContext(),MonthlyActivity.class);
+        startActivity(monthlyIntent);
+        overridePendingTransition(0,0);
+        finish();
     }
 
     public void recordClick(View view) {
