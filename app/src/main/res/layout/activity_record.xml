@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".RecordActivity"
     android:background="@color/backgroundDark">
-
+    <!--상단바-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
@@ -26,7 +27,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/date"
+        android:id="@+id/dateView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
@@ -36,6 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         >
         <TextView
+            android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -54,11 +56,11 @@
         android:layout_height="wrap_content"
         android:background="@drawable/border_box"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/dateView"
         app:layout_constraintEnd_toEndOf="parent"
         >
         <TextView
-            android:id="@+id/time_record_text"
+            android:id="@+id/timer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -67,7 +69,7 @@
             app:layout_constraintBottom_toTopOf="@+id/subject_name"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="30dp"
-            android:text="00 : 00"
+            android:text="00 : 00 : 00"
             android:gravity="center"
             android:textColor="@color/fontColor"
             android:textSize="48sp"
@@ -76,7 +78,7 @@
             android:id="@+id/subject_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/time_record_text"
+            app:layout_constraintTop_toBottomOf="@+id/timer"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/study_place"
@@ -100,6 +102,7 @@
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!--중간 editText n Button-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -176,7 +179,7 @@
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
+    <!--하단바-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/under_bar"
         android:layout_width="match_parent"
@@ -186,8 +189,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         >
-
-
         <Button
             android:id="@+id/todayButton"
             android:layout_width="80dp"
@@ -204,6 +205,7 @@
             android:text="TODAY"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="todayClick"
             />
         <Button
             android:id="@+id/monthlyButton"
@@ -220,6 +222,7 @@
             android:text="MONTHLY"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="monthlyClick"
             />
 
         <Button
@@ -237,6 +240,7 @@
             android:text="RECORD"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="recordClick"
             />
         <Button
             android:id="@+id/groupButton"
@@ -253,6 +257,7 @@
             android:text="GROUP"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="groupClick"
             />
         <Button
             android:id="@+id/myButton"
@@ -270,10 +275,9 @@
             android:text="MY"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="myClick"
             />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

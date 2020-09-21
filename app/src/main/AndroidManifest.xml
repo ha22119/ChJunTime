@@ -9,22 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MonthlyActivity"></activity>
         <activity android:name=".GroupDetailActivity"></activity>
-        <activity android:name=".CreateGroupActivity">
+        <activity android:name=".CreateGroupActivity"></activity>
+        <activity android:name=".GroupActivity" />
+        <activity android:name=".MyInfoActivity" />
+        <activity android:name=".DuringRecordActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RecordActivity" />
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GroupActivity"></activity>
-        <activity android:name=".MyInfoActivity" />
-        <activity android:name=".StopRecordActivity" />
-        <activity android:name=".DuringRecordActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RecordActivity" />
-        <activity android:name=".Splash" />
         <activity android:name=".MainActivity" />
     </application>
 

@@ -7,6 +7,7 @@
     tools:context=".MainActivity"
     android:background="@color/backgroundDark">
 
+    <!--상단바-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
@@ -15,20 +16,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <ImageButton
-            android:id="@+id/record_list"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/side_button"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:background="#00ff0000"
-            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,7 +26,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/date"
+        android:id="@+id/dateView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
@@ -49,6 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         >
         <TextView
+            android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -67,7 +55,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/border_box"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/dateView"
         app:layout_constraintEnd_toEndOf="parent"
         >
         <TextView
@@ -845,37 +833,37 @@
                         android:layout_marginRight="5dp"
                         />
                     <View
-                        android:id="@+id/fiftteen_1"
+                        android:id="@+id/fifteen_1"
                         android:layout_width="30dp"
                         android:layout_height="35dp"
                         android:background="@drawable/time_table"
                         />
                     <View
-                        android:id="@+id/fiftteen_2"
+                        android:id="@+id/fifteen_2"
                         android:layout_width="30dp"
                         android:layout_height="35dp"
                         android:background="@drawable/time_table"
                         />
                     <View
-                        android:id="@+id/fiftteen_3"
+                        android:id="@+id/fifteen_3"
                         android:layout_width="30dp"
                         android:layout_height="35dp"
                         android:background="@drawable/time_table"
                         />
                     <View
-                        android:id="@+id/ffiftteen_4"
+                        android:id="@+id/fifteen_4"
                         android:layout_width="30dp"
                         android:layout_height="35dp"
                         android:background="@drawable/time_table"
                         />
                     <View
-                        android:id="@+id/fiftteen_5"
+                        android:id="@+id/fifteen_5"
                         android:layout_width="30dp"
                         android:layout_height="35dp"
                         android:background="@drawable/time_table"
                         />
                     <View
-                        android:id="@+id/fiftteen_6"
+                        android:id="@+id/fifteen_6"
                         android:layout_width="30dp"
                         android:layout_height="35dp"
                         android:background="@drawable/time_table"
@@ -1281,6 +1269,7 @@
 
     </ListView>
 
+    <!--하단바-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/under_bar"
         android:layout_width="match_parent"
@@ -1290,8 +1279,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         >
-
-
         <Button
             android:id="@+id/todayButton"
             android:layout_width="80dp"
@@ -1308,6 +1295,7 @@
             android:text="TODAY"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="todayClick"
             />
         <Button
             android:id="@+id/monthlyButton"
@@ -1324,6 +1312,7 @@
             android:text="MONTHLY"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="monthlyClick"
             />
 
         <Button
@@ -1341,6 +1330,7 @@
             android:text="RECORD"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="recordClick"
             />
         <Button
             android:id="@+id/groupButton"
@@ -1357,6 +1347,7 @@
             android:text="GROUP"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="groupClick"
             />
         <Button
             android:id="@+id/myButton"
@@ -1374,6 +1365,7 @@
             android:text="MY"
             android:textColor="@color/fontColor"
             android:gravity="center"
+            android:onClick="myClick"
             />
 
 
